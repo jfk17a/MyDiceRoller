@@ -17,12 +17,15 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer sadSound;
     MediaPlayer goodSound;
     private Random roll = new Random();
+    private int randoRoll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rollSound = MediaPlayer.create(this,R.raw.roll_sound);
+        sadSound = MediaPlayer.create(this, R.raw.sad_roll);
+        goodSound = MediaPlayer.create(this, R.raw.good_roll);
 
         dieRoll = findViewById(R.id.direRollf);
         rollText = findViewById(R.id.critFail);
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void rollDie(){
-        int randoRoll = roll.nextInt(20) + 1;
+        randoRoll = roll.nextInt(20) + 1;
 
         switch(randoRoll) {
             case 1:
@@ -124,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void rollCrit() {
-        goodSound = MediaPlayer.create(this, R.raw.good_roll);
         rollText.setText("Critical Hit!");
         rollText.setTextColor(getResources().getColor(R.color.green));
         goodSound.seekTo(0);
@@ -137,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void rollFail(){
-        sadSound = MediaPlayer.create(this, R.raw.sad_roll);
         rollText.setText("Critical Miss!");
         rollText.setTextColor(getResources().getColor(R.color.red));
         sadSound.seekTo(0);
