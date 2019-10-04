@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">MyDiceRoller</string>
+    <string name="roll_1">number_1_rolled</string>
+    <string name="roll_2">number_2_rolled</string>
+    <string name="roll_3">number_3_rolled</string>
+    <string name="roll_4">number_4_rolled</string>
+    <string name="roll_5">number_5_rolled</string>
+    <string name="roll_6">number_6_rolled</string>
+    <string name="roll_7">number_7_rolled</string>
+    <string name="roll_8">number_8_rolled</string>
+    <string name="roll_9">number_9_rolled</string>
+    <string name="roll_10">number_10_rolled</string>
+    <string name="roll_11">number_11_rolled</string>
+    <string name="roll_12">number_12_rolled</string>
+    <string name="roll_13">number_13_rolled</string>
+    <string name="roll_14">number_14_rolled</string>
+    <string name="roll_15">number_15_rolled</string>
+    <string name="roll_16">number_16_rolled</string>
+    <string name="roll_17">number_17_rolled</string>
+    <string name="roll_18">number_18_rolled</string>
+    <string name="roll_19">number_19_rolled</string>
+    <string name="roll_20">number_20_rolled</string>
 </resources>
